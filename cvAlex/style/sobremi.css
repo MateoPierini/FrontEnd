@@ -1,0 +1,50 @@
+*{
+    background-color: rgb(243, 243, 243);
+}
+.cabeza {
+    background-image: url(../images/banner2.png);
+    background-size: auto;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.7;
+    height: 600px;
+    margin-top: -10px;
+    margin-left: -8px;
+    margin-right: -10px;
+}
+#fotocarnet{
+    position: relative;
+    margin-top: -60px;
+    width: 350px;
+    margin-left: 420px;
+    border-radius: 10px;
+
+}
+#fotocarnet:hover{
+    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.685);
+}
+#tituloPrincipal{
+    text-align: center;
+    background-color: rgba(129, 129, 129, 0.932);
+    padding: 0.2cm;
+}
+.secundario{
+    background-color: rgba(129, 129, 129, 0.932);
+    padding: 0.2cm;
+}
+ul{
+    font-family: 'Poppins', sans-serif;
+}
+
+#atras{
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+#atras:hover{
+    background-color: darkgray;
+}
+
+b{
+    text-decoration: underline;
+}

@@ -1,5 +1,6 @@
 *{
     font-family: 'Poppins', sans-serif;
+    background-color: rgb(197,197,197);
 }
 
 .banner{
@@ -10,23 +11,32 @@
     background-attachment: fixed;
     margin-top: -16px;
     margin-left: -10px;
-    color: wheat;
+    margin-right: -11px;
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 10px;
 }
 
+#cabeza{
+    background-color: white;
+    border-radius: 5px;
+    padding-left: 0.1cm;
+    margin-top: 10cm;
+    margin-left: 2cm;
+    margin-right: 2cm;
+}
+
 .button{
-    margin-top: 430px;
-    margin-left: -550px;
+    margin-top: 1.5cm;
+    margin-left: -600px;
     border-radius: 5px;
     padding: 5px 10px;
     position: relative;
+    background-color: rgb(226, 226, 226);
 }
 .button:hover{
-    border-radius: 5px;
-    background-color: #674728;
+    background-color: rgb(197, 197, 197);
     text-decoration: none;
-    color: white;
 }
 
 img{
@@ -41,8 +51,8 @@ img{
     padding-bottom: 0.5cm;
     text-align: right;
     background-size: auto;
-    color: wheat;
+    color: rgb(0, 0, 0);
     height: 1em;
-    background-color: #674728;
+    background-color: rgb(197,197,197);
     font-size: 50px;
 }
