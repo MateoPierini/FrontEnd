@@ -30,6 +30,7 @@
     margin-top: 1.5cm;
     margin-left: -600px;
     border-radius: 5px;
+    border: none;
     padding: 5px 10px;
     position: relative;
     background-color: rgb(226, 226, 226);
@@ -43,6 +44,7 @@ img{
     width: 50em;
     margin-left: 20%;
     margin-top: -200px;
+    border-radius: 15px;
 }
 
 #footer{
@@ -55,4 +57,10 @@ img{
     height: 1em;
     background-color: rgb(197,197,197);
     font-size: 50px;
+}
+
+#footer i{
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
 }
