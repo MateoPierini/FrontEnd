@@ -1,6 +1,6 @@
 *{
     font-family: 'Poppins', sans-serif;
-    background-color: rgb(197,197,197);
+    background-color: #CCBEA8;
 }
 
 .banner{
@@ -33,10 +33,10 @@
     border: none;
     padding: 5px 10px;
     position: relative;
-    background-color: rgb(226, 226, 226);
+    background-color: #8297B6;
 }
 .button:hover{
-    background-color: rgb(197, 197, 197);
+    background-color: #a8b6cc;
     text-decoration: none;
 }
 
@@ -55,7 +55,7 @@ img{
     background-size: auto;
     color: rgb(0, 0, 0);
     height: 1em;
-    background-color: rgb(197,197,197);
+    background-color: #CCBEA8;
     font-size: 50px;
 }
 

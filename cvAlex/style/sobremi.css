@@ -42,6 +42,14 @@ ul{
     margin-bottom: 10px;
 }
 
+ul li b{
+    font-style: italic;
+    font-family: 'Merriweather', serif;
+    background-color: #B6A182;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+
 #atras{
     background-color: #8297B6;
     position: fixed;
@@ -59,8 +67,4 @@ ul{
 #atras:hover{
     background-color:#a8b6cc;
     width: 80px;
-}
-
-b{
-    text-decoration: underline;
 }

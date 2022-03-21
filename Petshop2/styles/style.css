@@ -11,6 +11,10 @@ header,#propa,#menuTop{
     padding-left: 30px;
 }
 
+button img{
+    background-color: inherit;
+}
+
 #menuTop{
     margin-left: 900px;
     background-color: #222222;
@@ -157,7 +161,7 @@ h1{
     background-color: #F0A83E;
     background-image: url(../images/enviar-correo\ 1.png);
     background-repeat: no-repeat;
-    background-position-x: 10px;
+    background-position-x: 20px;
     background-position-y: center ;
     /* padding-top: 5px; */
     padding-left: 60px ;
@@ -179,6 +183,7 @@ h1{
     color: white;
     font-weight: 700;
     font-size: 20px;
+    padding-left: 10px;
 }
 
 #correo{
