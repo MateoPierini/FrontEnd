@@ -51,7 +51,7 @@ img{
     padding-top: 0.5cm;
     padding-right: 1.5cm;
     padding-bottom: 0.5cm;
-    text-align: right;
+    text-align: center;
     background-size: auto;
     color: rgb(0, 0, 0);
     height: 1em;
@@ -62,5 +62,5 @@ img{
 #footer i{
     text-decoration: none;
     color: black;
-    margin-right: 10px;
+    margin-right: 20px;
 }

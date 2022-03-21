@@ -19,6 +19,7 @@
     color: #005677;
 }
 .secundarios {
+    padding-left: 10px;
     background-color: rgb(184, 184, 184);
     color: #005677;
     margin-bottom: 20px;
@@ -26,6 +27,7 @@
 
 ul{
     margin-bottom: 15px;
+    padding-left: 15px;
 }
 
 footer {
