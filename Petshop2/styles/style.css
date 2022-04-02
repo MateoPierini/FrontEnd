@@ -1,14 +1,27 @@
+/* https://www.figma.com/file/31NtnGFVE8XyUbfA8Esktw/Petshop?node-id=0%3A1   figma de referencia */
+
 *{
     margin: 0;
     padding: 0;
-    background-color: aliceblue;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-header,#propa,#menuTop{
+html{
+    font-size: 10px;
+}
+
+:root{
+    --color-primario: #F0A83E;
+    --color-secundario: #3c2313;
+}
+
+header,#propa{
     background-color: #222222;
+    font-size: 1.3rem;
     color: white;
-    padding-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.5rem;
 }
 
 button img{
@@ -16,9 +29,10 @@ button img{
 }
 
 #menuTop{
-    margin-left: 900px;
+    font-size: 1rem;
     background-color: #222222;
 }
+
 header,span,a{
     text-decoration: none;
     color: inherit;
@@ -27,28 +41,33 @@ header,span,a{
 .enlacesHeader{
     background-color: #222222;
 }
+
 button{
     border: none;
     color: white;
 }
+
 /* ------------------------------------------------HEADER LISTO-------------------------------------------------------------- */
-#logo{
-    background-color: #F0A83E;
-    padding-top: 30px;
-    padding-left: 25px;
-    margin-right: 700px;
-    image-rendering: optimizeQuality;
-}
+
 .patitasMenu{
-    background-color: #F0A83E;
+    background-color: var(--color-primario);
 }
+
 #espacio{
+    background-image: url(../images/Logo.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5rem;
+    display: flex;
+    justify-content: right;
+    padding-right: 3rem;
+    align-items: center;
     height: 80px;
-    background-color:#F0A83E ;
+    background-color: var(--color-primario) ;
 }
 
 .menuPrin{
-    background-color: #F0A83E;
+    background-color: var(--color-primario);
     color:white;
     font-size: 18px;
     margin-right: 5px;
@@ -61,63 +80,76 @@ button{
     background-size: cover;
     background-repeat: no-repeat;
     height: 550px;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .placer{
-    position: absolute;
     background-color:white;
     border-radius: 5px;
     font-size: 35px;
-    color: #3c2313;
-    padding: 10px 0px 15px 0px;
-    margin-left: 860px;
-    margin-top: 225px;
-    height: 45px;
-    width: 425px;
-    padding-left: 20px;
+    color: var(--color-secundario);
+    padding: 1rem 0px 1.5rem 0px;
+    height: 4.5rem;
+    width: 42.5rem;
+    padding-left: 2rem;
+    margin-right: 5rem;
 }
 
 #descuentosBanner{
     background: none;
-    margin-left: 915px;
-    margin-top: 300px;
-    font-size: 25px;
+    font-size: 2.5rem;
+    color: var(--color-secundario);
+    padding: 2rem;
+    margin-right: 10rem;
 }
 
 #comederosbn{
-    background-color: #F0A83E;
+    background-color: var(--color-primario);
+    border-radius: 10px;
     color: white;
     font-size: 30px;
-    margin-top: 360px;
-    margin-left: 985px;
+    margin-right: 17rem;
     padding: 10px 10px 10px 10px;
     height: 70px;
     width: 200px;
+
 }
 /* ------------------------------------------------BANNER LISTO-------------------------------------------------------------- */
 .iniTienda{
     margin-top: 30px;
-    text-align: center;
-    color: #3c2313;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-secundario);
 }
 
 h1{
-    font-size: 1cm;
-    margin-bottom: 20px;
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+.iniTienda span{
+    font-size: 2rem;
 }
 
 .productos{
-    text-align: center;
-    padding-right: 10px;
+    display: flex;
+    justify-content: center;
     margin-top: 50px;
+    gap: 2rem;
 }
 /* ---------------------------------------------------PRODUCTOS LISTO-------------------------------------------------------- */
 .contactanos{
     margin-top: 100px;
-    text-align: center;
-    color: #3c2313;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-secundario);
     font-size: 20px;
+    gap: 1rem;
 }
 
 .contactanos,h2{
@@ -125,109 +157,120 @@ h1{
 }
 
 .contact{
-    background-color: #3c2313;
-    width: 325px;
-    padding: 15px;
+    background-color: var(--color-secundario);
+    width: 32.5rem;
+    padding: 1.5rem;
     border-radius: 15px;
     border: none;
-    margin-bottom: 10px;
     color: white;
 }
 
-#reset{
-    font-size: 20px;
-    padding-top: 5px;
-    padding-right: 15px;
-    padding-bottom: 10px;
-    padding-left: 15px;
-    background-color: #8A8787;
-    /* margin-left: -100px; */
-    border-radius: 15px;
-    margin-bottom: 50px;
+.botones{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 
-#enviar{
-    background-color: #F0A83E;
-    font-size: 20px;
+#reset{
+    font-size: 2rem;
+    padding-top: 0.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+    background-color: #8A8787;
+    border-radius: 1.5rem;
+    margin-bottom: 5rem;
+    height: 3.9rem;
+}
+
+#sent{
+    background-color: var(--color-primario);
+    font-size: 2rem;
     padding-top: 5px;
     padding-right: 27.5px;
     padding-bottom: 10px;
     padding-left: 27.5px;
-    border-radius: 15px;
-    margin-left: 6px;
+    border-radius: 1.5rem;
+    height: 3.9rem;
 }
 
 #sus{
-    background-color: #F0A83E;
+    background-color: var(--color-primario);
     background-image: url(../images/enviar-correo\ 1.png);
     background-repeat: no-repeat;
-    background-position-x: 20px;
-    background-position-y: center ;
-    /* padding-top: 5px; */
-    padding-left: 60px ;
-    padding-bottom: 10px;
-    padding-top: 15px;
+    background-position-x: 2rem;
+    background-position-y: center;
+    padding-left: 6.5rem;
     padding-right: 10px;
-    height: auto;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* 
-#enviarcorreo{
-    background-color: inherit;
-    margin-top: 15px;
-} */
+.susbar{
+    background-color: var(--color-primario);
+}
 
 #suscribe{
     background-color: inherit;
     margin-bottom: 0;
     color: white;
     font-weight: 700;
-    font-size: 20px;
-    padding-left: 10px;
+    font-size: 2rem;
+}
+
+.susinput{
+    width: 35%;
+    display: flex;
+    gap: 1rem;
 }
 
 #correo{
     background-color: white;
     border-radius: 15px;
     border: none;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    height: 4rem;
     padding-right: 20px;
     padding-left: 5px;
     color: #A0A0A0;
-    width: 250px;
-    margin-left: 600px;
+    width: 60%;
 }
 
 #suscribirme{
-    background-color: #3c2313;
+    background-color: var(--color-secundario);
     border-radius: 15px;
-    padding: 10px 5px;
-    margin-left: 5px;
+    height: 4rem;
+    width: 30%;
 }
 /* ----------------------------------------------------------------SUSCRIPCIÓN LISTO----------------------------------------- */
-#pie{
+/* #prefooter{
     height: 240px;
-    background-color: #3c2313;
+    background-color: var(--color-secundario);
     background-image: url(../images/LogoFooter.png);
     background-repeat: no-repeat;
     background-position-x: 1100px;
     background-position-y: center ;
     padding-top: 23px;
     padding-left: 70px;
+} */
+
+.prefooter{
+    height: 30rem;
+    background-color: var(--color-secundario);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 6rem;
+    gap: 2rem;
 }
 
-.pie,#location,#phone,#correoElect{
-    background-color: inherit;
-    position: absolute;
+.prefooterimg{
+    width: 15rem;
 }
-
-#location{
-    margin-top: 80px;
-}
-
-#correoElect{
-    margin-top: 160px;
+.prefootercorreo{
+    width: 22rem;
 }
 
 #footer{    

@@ -1,0 +1,186 @@
+@media (max-width: 768px){
+    header{
+        display: none;
+    }
+    .menuPrin{
+        display: none;
+    }
+    /*--------BANNER---------*/
+    #espacio{
+        box-shadow: 0px 5px 10px black ;
+    }
+    #banner{
+        background-size: cover;
+        background-position-x: left;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .placer{
+        background-color:white;
+        border-radius: 5px;
+        font-size: 35px;
+        color: var(--color-secundario);
+        padding: 1rem 0px 1.5rem 0px;
+        height: 4.5rem;
+        width: 42.5rem;
+        padding-left: 2rem;
+        margin-left: 1rem;
+    }
+    
+    #descuentosBanner{
+        background: none;
+        font-size: 2.5rem;
+        color: var(--color-secundario);
+        padding: 2rem;
+        margin-left: 1rem;
+    }
+    
+    #comederosbn{
+        background-color: var(--color-primario);
+        border-radius: 10px;
+        color: white;
+        font-size: 30px;
+        padding: 10px 10px 10px 10px;
+        height: 70px;
+        width: 200px;
+        margin-left: 1rem;
+    }
+    /*---------PRODUCTOS---------*/
+    .iniTienda{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #patitaPrin{
+        width: 15rem;
+    }
+    
+    h1{
+        font-size: 7rem;
+        margin-bottom: 1rem;
+    }
+    
+    .iniTienda span{
+        font-size: 3rem;
+    }
+    
+    .productos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        gap: 5rem;
+    }
+
+    .productos img{
+        width: 80%;
+    }
+    /*----------Contacto----------*/
+    .contactanos{
+        display: flex;
+        flex-direction: column;
+    }
+    .contactanos h2{
+        font-size: 7rem;
+    }
+    .contact{
+        background-color: var(--color-secundario);
+        font-size: 3rem;
+        width: 50rem;
+    }
+    .botones{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    #reset{
+        font-size: 2.5rem;
+        height: 50%;
+        width: 45%;
+        padding: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #sent{
+        font-size: 2.5rem;
+        height: 50%;
+        width: 45%;
+        padding: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+/* --------Contactos--------- */
+
+    #sus{
+        background-image: url(../images/enviar-correo\ 1.png);
+        background-position-y: top;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 11rem;
+        gap: 1rem;
+    }
+    #suscribe{
+        background: none;
+        display: block;
+        font-size: 3rem;
+        margin-left: 6.5rem;
+    }
+    .susinput{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    #correo{
+        width: 65%;
+        height: 5rem;
+    }
+    #suscribirme{
+        width: 25%;
+        height: 5rem;
+    }
+
+    #prefooter{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        background-image: url(../images/LogoFooter.png);
+        background-color: var(--color-secundario);
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: 1.5rem;
+        padding-top: 10rem;
+        height: 35rem;
+        width: 100%;
+    }
+
+    .prefooter{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 10rem;
+        width: 100%;
+    }
+    
+    .prefooterimg{
+        width: 25rem;
+    }
+    .prefootercorreo{
+        width: 36rem;
+    }
+
+    #footer{
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+    }
+}
