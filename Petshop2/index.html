@@ -11,9 +11,18 @@
 <body>
     <header>
         <span id="propa">Grandes ofertas en comederos</span> 
-        <section>
-            <a href="#" class="enlacesHeader"><button class="enlacesHeader">Español <img src="images/Vector 1.png" alt="">&nbsp;</button></a> <a href="#" class="enlacesHeader"><button class="enlacesHeader">ARG$ <img src="images/Vector 1.png" alt=""></button></a>
-        </section>
+        <form>
+            <select name="idiomas" id="idioma" class="optionsHeader">
+                <option value="ES" class="opciones">Español</option>
+                <option value="ES" class="opciones">Ingles</option>
+                <option value="AR" class="opciones">Arabe</option>
+            </select> 
+            <select name="Moneda" id="Moneda" class="optionsHeader">
+                <option value="ARG$" class="opciones">ARG</option>
+                <option value="USD$" class="opciones">USD</option>
+                <option value="SOL$" class="opciones">SOL</option>
+            </select>
+        </form>
     </header>
 
     <main>
@@ -48,13 +57,18 @@
         <section>
             <div class="contactanos">
                 <h2>Contáctanos</h2>
-                <p><input class="contact" type="text" value="Nombre y apellido"></p>
-                <p><input class="contact" type="text" value="Ingresá tu correo electrónico"></p>
-                <p><input class="contact" type="text" value="Teléfono"></p>
-                <div class="botones">
-                    <button id="reset">Resetear</button>
-                    <button id="sent">Enviar</button>
-                </div>
+                <form action="#" method="get">
+                    <fieldset>
+                        <input class="contact" type="text" placeholder="Nombre y apellido" required>
+                        <input class="contact" type="email" placeholder="Ingresá tu correo electrónico" required>
+                        <input class="contact" type="number" placeholder="Teléfono" min="10000000" required>
+                        <textarea name="" id="" cols="40" rows="5"></textarea>
+                        <div class="botones">
+                            <button id="reset" type="reset">Resetear</button>
+                            <button id="sent" type="submit">Enviar</button>
+                        </div>
+                    </fieldset>
+                </form>
             </div>
         </section>
 
@@ -63,17 +77,36 @@
                 <section class="susbar">
                     <h2 id="suscribe">Suscríbite para más novedades</h2>
                 </section>
-                <section class="susinput">
-                    <input type="name" value="Ingresá tu correo electrónico" id="correo"> <button id="suscribirme">Suscribirme</button>
-                </section>
+                <form class="susinput">
+                    <input type="email" placeholder="Ingresá tu correo electrónico" id="correo">
+                    <button id="suscribirme">Suscribirme</button>
+                </form>
             </div>
         </section>
 
         <section id="prefooter">
             <div class="prefooter">
-                <img src="images/Location.png" alt="" class="prefooterimg">
-                <img src="images/Phone.png" alt="" class="prefooterimg">
-                <img src="images/Correo2.png" alt="" class="prefootercorreo">
+                <div class="sobreNosotros">
+                    <img src="images/iconoLocalidad.png" alt="" class="prefooterimg"> 
+                    <div class="sobreNosotrosTexto">
+                        <h3>Localidad</h3>
+                        <span>Calle - provincia</span>
+                    </div>
+                </div>
+                <div class="sobreNosotros">
+                    <img src="images/iconoTel.png" alt="" class="prefooterimg">
+                    <div class="sobreNosotrosTexto">
+                        <h3>Teléfono</h3>
+                        <span>Número de teléfono</span>
+                    </div>
+                </div>
+                <div class="sobreNosotros">
+                    <img src="images/iconoEmail.png" alt="" class="prefooterimg">
+                    <div class="sobreNosotrosTexto">
+                        <h3>Correo Electrónico</h3>
+                        <span>Dirección de correo</span>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

@@ -12,7 +12,7 @@ html{
 
 :root{
     --color-primario: #F0A83E;
-    --color-secundario: #3c2313;
+    --color-secundario: #3C2313;
 }
 
 header,#propa{
@@ -36,6 +36,16 @@ button img{
 header,span,a{
     text-decoration: none;
     color: inherit;
+}
+
+.optionsHeader{
+    background-color: inherit;
+    color: white;
+    border: none;
+}
+
+.opciones{
+    color: black;
 }
 
 .enlacesHeader{
@@ -244,6 +254,24 @@ h1{
     height: 4rem;
     width: 30%;
 }
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border: 0px solid white;
+}
+
+fieldset textarea{
+    width: 100%;
+}
+textarea{
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    border-radius: 1rem;
+    padding: 5px 1rem 
+}
 /* ----------------------------------------------------------------SUSCRIPCIÓN LISTO----------------------------------------- */
 /* #prefooter{
     height: 240px;
@@ -259,18 +287,38 @@ h1{
 .prefooter{
     height: 30rem;
     background-color: var(--color-secundario);
+    background-image: url(../images/LogoFooter.png);
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: center;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding-left: 6rem;
+    padding: 1.5rem 0rem 1.5rem 6rem;
     gap: 2rem;
 }
 
-.prefooterimg{
-    width: 15rem;
+.sobreNosotros{
+    display: flex;
+    flex-direction: row;
 }
-.prefootercorreo{
-    width: 2rem;
+.sobreNosotros h3{
+    padding-left: 2rem ;
+    color: wheat;
+    font-size: 3rem;
+}
+.sobreNosotros span{
+    padding-left: 2rem;
+    color: bisque;
+    font-size: 1.5rem;
+}
+.sobreNosotrosTexto{
+    display: flex;
+    flex-direction: column;
+}
+
+.prefooterimg{
+    width: 7.8rem;
 }
 
 #footer{    
