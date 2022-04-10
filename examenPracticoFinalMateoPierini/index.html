@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manage</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
     <link rel="stylesheet" href="css/normalizer.css">
     <script src="https://kit.fontawesome.com/1f0fd1a92d.js" crossorigin="anonymous"></script>
 </head>
@@ -22,7 +23,8 @@
             <a href="#" class="headerNav1A">Community</a>
         </nav>
         <nav class="headerNav2">
-            <a href="#" class="botonprincipal">
+            <img src="imagenes/icon-hamburger.svg" alt="menu displey" id="hamburguesa">
+            <a href="#" class="botonprincipal" id="botonHeader">
                 Get Started
             </a>
         </nav>
@@ -38,7 +40,7 @@
                     <a href="#" class="botonprincipal">Get Started</a>
                 </div>
                 <div class="home2">
-                    <img src="imagenes/Ilustracion.png" alt="">
+                    <img src="imagenes/Ilustracion.png" alt="Gráficos Informativos">
                 </div>
             </section>
             
@@ -78,21 +80,21 @@
         <section class="testimonios">
             <h2>What they´ve said</h2>
             <div class="contenedorTarjetas">
-                <div class="tarjeta">
-                    <img src="imagenes/avatar-anisha.png" alt="Foto de perfil">
+                <div class="tarjeta" id="perfil1">
+                    <img src="imagenes/avatar-anisha.png" alt="Foto de perfil"> <!-- se que no suena muy bien la idea de poner id a cada tarjeta, pero no se me ocurria una forma de hacer para que quede bien con la mobile version -->
                     <h4>Ali Bravo</h4>
                     <span>
                         “Manage has supercharged our team´s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”
                     </span>
                 </div>
-                <div class="tarjeta">
+                <div class="tarjeta" id="perfil2">
                     <img src="imagenes/avatar-ali.png" alt="Foto de perfil">
                     <h4>Ali Bravo</h4>
                     <span>
                         “We have been able to cancel so many other subscriptions since using manage. There ir no more cross-channel confusion and everyone is much more focused.”
                     </span>
                 </div>
-                <div class="tarjeta">
+                <div class="tarjeta" id="perfil3">
                     <img src="imagenes/avatar-richard.png" alt="Foto de perfil">
                     <h4>Ali Bravo</h4>
                     <span>
@@ -105,7 +107,7 @@
         
         <section class="pie">
             <div class="piecontenedor">
-                <h2>Simplify hoy your team words today.</h2>
+                <h2>Simplify how your team works today.</h2>
                 <a href="#" class="botonsecundario">Get Started</a>
             </div>
         </section>

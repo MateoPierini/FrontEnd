@@ -1,0 +1,337 @@
+@media (max-width: 560px) and (orientation: portrait){
+    *{
+        background-color: #ffffff;
+    }
+    :root{
+        --azul-principal: #242E52;
+        --azul-secundario: #2e3a68;
+        --salmon-primario: #F3603B;
+        --salmon-secundario: #ef7050;
+        --salmon-terciario: #f8bcad69;
+        --negro-primario: #1E1E26;
+        --gris-claro: #E5E5E5;
+        --girs-oscuro: #B9B9C1;
+    }
+    
+    /*---Header---*/
+    .header{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 3rem;
+    }
+    
+    .headerNav1{
+        display: none;
+    }
+    
+    #botonHeader{
+        display: none;
+    }
+    /*---Header---*/
+    
+    /*---Main---*/
+    .home{
+        background-image: url(../imagenes/bg-simplify-section-desktop.svg);
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10rem;
+        height: 50rem;
+    }
+    
+    .home1{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+    }
+    
+    .home1 h2{
+        font-size: 4.5rem;
+        width: 100%;
+    }
+    
+    .home1 span{
+        color: var(--girs-oscuro);
+        font-size: 2rem;
+        font-weight: 400;
+        max-width: 90%;
+        line-height: 3rem;
+    }
+
+    .botonprincipal{
+        font-size: 2rem;
+        font-weight: 700;
+        width: 20rem;
+        padding: 1.8rem 0;
+        border-radius: 30px;
+        position: relative;
+    }
+    
+    .home2{
+        display: flex;
+        justify-content: center;
+        width: 50rem;
+    }
+    /*---Main---*/
+    
+    /*---About Us---*/
+    .aboutUs{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 45rem;
+        gap: 5rem;
+    }
+    .usManage{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        width: 100%;
+    }
+    .usManage h2{
+        max-width: 70%;
+        font-size: 4rem;
+        text-align: center;
+    }
+    .usManage span{
+        font-size: 1.9rem;
+        color: var(--girs-oscuro);
+        text-align: center;
+        max-width: 70%;
+        line-height: 3rem;
+    }
+    
+    .usList{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        padding-left: 8rem;
+        position: relative;
+    }
+    .lista{
+        width: 100%;
+    }
+    .list{
+        padding-left: 3rem;
+    }
+    .buttonList{
+        font-size: 2.25rem;
+        height: 5.2rem;
+        width: 8rem;
+        border-radius: 30px;
+        position: absolute;
+        left: 6rem;
+    }
+    .list h4{
+        background-color: var(--salmon-terciario);
+        width: 80vw;
+        padding: 1.2rem 0;
+        padding-left: 4rem;
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+    .list span{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    /*---About Us---*/
+
+    /*---Testimonios---*/
+    .testimonios{
+        position: relative;
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5rem 0;
+        position: relative;
+        width: 100vw;
+        height: 60rem;
+        gap: 10rem;
+        top: 25rem;
+    }
+    .testimonios h2{
+        display: flex;
+        position: relative;
+        top: 0rem;
+        font-size: 4.5rem;
+    }
+    
+    .contenedorTarjetas{
+        display: flex;
+        flex-direction: column;
+        top: 5rem;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 70rem;
+    }
+    .tarjeta{
+        background-color: var(--gris-claro);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 30rem;
+    }
+    .tarjeta img{
+        position: absolute;
+        top: -5rem;
+        width: 20%;
+    }
+    
+    .tarjeta h4{
+        font-size: 3rem;
+    }
+    
+    .tarjeta span{
+        font-size: 2rem;
+        text-align: center;
+        line-height: 3rem;
+    }
+    
+    #perfil2{
+        position: relative;
+        width: 100%;
+    }
+    /*---Testimonios---*/
+
+    /*---Pie---*/
+    .pie{
+        position: relative;
+    }
+    .piecontenedor{
+        background-image: url(../imagenes/bg-simplify-section-mobile.svg);
+        background-repeat: no-repeat;
+        background-position-y: center;
+        position: relative;
+        top: 20rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        height: 45rem;
+        width: 100vw;
+    }
+    .piecontenedor h2{
+        width: 100%;
+        text-align: center;
+        line-height: 6rem;
+    }
+    
+    .botonsecundario{
+        font-size: 2rem;
+        font-weight: 700;
+        width: 20rem;
+        padding: 1.8rem 0;
+        border-radius: 30px;
+        position: relative;
+    }
+    /*---Pie---*/
+    
+    /*---Footer---*/
+    .footer{
+        position: relative;
+        top: 20rem;
+        display: flex;
+        justify-content: space-around;
+        padding:  1rem 0;
+        height: 55rem;
+    }
+    
+    .contenedorfooter{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+    }
+    
+    /*---Buscador Footer---*/
+    .contenedorbuscadorfooter{
+        position: relative;
+        z-index: 150;
+        top: -8rem;
+        padding: 0;
+        width: 100%;
+    }
+    .buscadorfooter{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .form{
+        display: flex;
+        justify-content: center;
+        width: 90%;
+    }
+    .form input{
+        width: 70%;
+        height: 2.5rem;
+        border-radius: 25px;
+        padding-left: 2rem;
+        font-size: 1.5rem;
+    }
+    .form button{
+        width: 15%;
+        border-radius: 30px;
+        font-size: 1.5rem;
+    }
+    /*---Buscador Footer---*/
+    
+    /*---Menu Footer---*/
+    .menufooter{
+        position: relative;
+        z-index: 50;
+        top: -2rem;
+        display: flex;
+        width: 70%;
+    }
+    .footerNav{
+        gap: 2rem;
+    }
+    .footerNavA{
+        font-size: 2rem;
+    }
+    /*---Menu Footer---*/
+    
+    /*---Redes Footer---*/
+    .redes{
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        width: 100%;
+        height: 12rem;
+        top: 2rem;
+    }
+    .redesicons{
+        gap: 5rem;
+    }
+    .redes i{
+        font-size: 3rem
+    }
+    /*---Redes Footer---*/
+    
+    /*---Derechos Footer---*/
+    .derechos{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        top: 45rem;
+        font-size: 1.8rem;
+    }
+    /*---Derechos Footer---*/
+    /*---Footer---*/
+}
