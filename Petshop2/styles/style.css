@@ -6,13 +6,19 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+body ::selection{
+    background-color: var(--color-primario);
+}
+
 html{
     font-size: 10px;
 }
 
 :root{
     --color-primario: #F0A83E;
+    --color-primario-clarito: #f1b55b;
     --color-secundario: #3C2313;
+    --color-secundario-clarito: #442c1d;
 }
 
 header,#propa{
@@ -84,6 +90,10 @@ button{
     margin-left: 2px;
 }
 
+#menuIcon{
+    display: none;
+}
+
 #banner{
     background-image: url(../images/bowl-and-pet-daities-on-green-background\ 1.jpg);
     background-position: center top;
@@ -108,6 +118,7 @@ button{
     margin-right: 5rem;
 }
 
+
 #descuentosBanner{
     background: none;
     font-size: 2.5rem;
@@ -119,14 +130,21 @@ button{
 #comederosbn{
     background-color: var(--color-primario);
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
     font-size: 30px;
     margin-right: 17rem;
     padding: 10px 10px 10px 10px;
-    height: 70px;
-    width: 200px;
-
+    height: 6.8rem;
+    width: 20rem;
 }
+
+#comederosbn:hover{
+    background-color: var(--color-primario-clarito);
+}
+
 /* ------------------------------------------------BANNER LISTO-------------------------------------------------------------- */
 .iniTienda{
     margin-top: 30px;
@@ -162,6 +180,37 @@ h1{
     gap: 1rem;
 }
 
+.mensaje{
+    background-color: var(--color-secundario);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    height: 25rem;
+    padding: 1.5rem 0;
+}
+
+.mensaje h2{
+    color: white;
+    font-size: 2.5rem;
+}
+
+textarea{
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    border-radius: 1rem;
+    outline: 0;
+    padding: 5px 1rem;
+    max-width: 100%;
+    height: 100%;
+}
+
+textarea:focus, textarea:hover{
+    background-color: var(--color-primario-clarito);
+}
+
 .contactanos,h2{
     margin-bottom: 25px;
 }
@@ -173,6 +222,10 @@ h1{
     border-radius: 15px;
     border: none;
     color: white;
+}
+
+.contact:focus, .contact:hover{
+    background-color: var(--color-secundario-clarito);
 }
 
 .botones{
@@ -204,6 +257,9 @@ h1{
     border-radius: 1.5rem;
     height: 3.9rem;
 }
+#sent:hover{
+    background-color: var(--color-primario-clarito);
+}
 
 #sus{
     background-color: var(--color-primario);
@@ -229,6 +285,11 @@ h1{
     color: white;
     font-weight: 700;
     font-size: 2rem;
+}
+
+input{
+    border: 0 solid;
+    outline: none;
 }
 
 .susinput{
@@ -259,18 +320,16 @@ fieldset{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
-    border: 0px solid white;
+    gap: 1.5rem;
+    border: none;
 }
 
-fieldset textarea{
+
+
+.max{
     width: 100%;
-}
-textarea{
-    background-color: var(--color-primario);
-    color: var(--color-secundario);
-    border-radius: 1rem;
-    padding: 5px 1rem 
+    font-size: small;
+    text-align: right;
 }
 /* ----------------------------------------------------------------SUSCRIPCIÓN LISTO----------------------------------------- */
 /* #prefooter{
@@ -284,18 +343,20 @@ textarea{
     padding-left: 70px;
 } */
 
-.prefooter{
-    height: 30rem;
-    background-color: var(--color-secundario);
-    background-image: url(../images/LogoFooter.png);
-    background-repeat: no-repeat;
-    background-position-x: 95%;
-    background-position-y: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding: 1.5rem 0rem 1.5rem 6rem;
-    gap: 2rem;
+@media (min-width: 769px){
+    .prefooter{
+        height: 30rem;
+        background-color: var(--color-secundario);
+        background-image: url(../images/LogoFooter.png);
+        background-repeat: no-repeat;
+        background-position-x: 95%;
+        background-position-y: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 1.5rem 0rem 1.5rem 6rem;
+        gap: 2rem;
+    }
 }
 
 .sobreNosotros{
@@ -304,12 +365,12 @@ textarea{
 }
 .sobreNosotros h3{
     padding-left: 2rem ;
-    color: wheat;
+    color: white;
     font-size: 3rem;
 }
 .sobreNosotros span{
     padding-left: 2rem;
-    color: bisque;
+    color: #8A8787;
     font-size: 1.5rem;
 }
 .sobreNosotrosTexto{

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Petshop</title>
+    <script src="https://kit.fontawesome.com/1f0fd1a92d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/mobile.css">
 </head>
@@ -28,7 +29,11 @@
     <main>
         <section>
         <div id="espacio">
-            <span class="menuPrin"><img src="images/pawprint 2.png" alt="patita" class="patitasMenu">Categorias</span> <span class="menuPrin"><img src="images/pawprint 2.png" alt="patita" class="patitasMenu">Pets</span> <span class="menuPrin"><img src="images/pawprint 2.png" alt="patita" class="patitasMenu">Nosotros</span> <span class="menuPrin"><img src="images/pawprint 2.png" alt="patita" class="patitasMenu">Contactanos</span>
+            <span class="menuPrin"><img src="images/pawprint 2.png" alt="patita" class="patitasMenu">Categorias</span> 
+            <span class="menuPrin"><img src="images/pawprint 2.png" alt="patita" class="patitasMenu">Pets</span> 
+            <span class="menuPrin"><img src="images/pawprint 2.png" alt="patita" class="patitasMenu">Nosotros</span> 
+            <span class="menuPrin"><img src="images/pawprint 2.png" alt="patita" class="patitasMenu">Contactanos</span>
+            <i class="fa-solid fa-bars" id="menuIcon"></i>
         </div>
         </section>
 
@@ -36,7 +41,7 @@
         <div id="banner">
             <span class="placer"> ¡Es un placer tenerte aquí! </span>
             <span id="descuentosBanner"> ¡Comederos en descuento! </span>
-            <button id="comederosbn">COMEDEROS</button>
+            <a href="#comedero" id="comederosbn">COMEDEROS</a>
         </div>
         </section>
 
@@ -50,7 +55,7 @@
 
         <section>
             <div class="productos">
-                <img src="images/Churrasquito.png" alt="Churrasquito"> <img src="images/Comedero.png" alt="Comedero"> <img src="images/Huesito juguete.png" alt="">
+                <img src="images/Churrasquito.png" alt="Churrasquito"> <img src="images/Comedero.png" alt="Comedero" id="comedero"> <img src="images/Huesito juguete.png" alt="">
             </div>
         </section>
         <!-- <marquee behavior="" direction="left"> HOLA</marquee> Propiedad de desplazamiento -->
@@ -62,7 +67,11 @@
                         <input class="contact" type="text" placeholder="Nombre y apellido" required>
                         <input class="contact" type="email" placeholder="Ingresá tu correo electrónico" required>
                         <input class="contact" type="number" placeholder="Teléfono" min="10000000" required>
-                        <textarea name="" id="" cols="40" rows="5"></textarea>
+                        <div class="mensaje">
+                            <h2> Mensaje</h2>
+                            <textarea name="preguntas" id="preguntas" cols="40" rows="5" maxlength="350"></textarea>
+                        </div>
+                        <span class="max">Máximo 350 carácteres</span>
                         <div class="botones">
                             <button id="reset" type="reset">Resetear</button>
                             <button id="sent" type="submit">Enviar</button>
